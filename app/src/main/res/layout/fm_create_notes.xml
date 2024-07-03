@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FmCreateNotes"
+        android:background="@drawable/custom_gradient">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:hint="Enter your text here!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="21sp"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </FrameLayout>
+</layout>
